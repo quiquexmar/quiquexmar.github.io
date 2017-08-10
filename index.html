@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Para Mar 💖</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+    <link rel="stylesheet" href="https://daneden.github.io/animate.css/animate.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <style media="screen">
+      section{
+        height: 100%;
+        width: 100%;
+      }
+      .pacifico{
+        font-family: 'Pacifico', cursive;
+        line-height: 2;
+        background: -webkit-linear-gradient(left top, #00bfa5, #00b8d4);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      a{
+        color: #fff;
+      }
+    </style>
+
+  </head>
+  <body style="width: 100%; height: 100%; position: absolute;">
+
+    <div id="presentation" style="width: 100%; height: 100%; positon: absolute;">
+      <div class="animated slideInUp" style="top: 0px; background-image: url(img/bg.jpg); background-position: center; background-size: cover; postion: absolute; width: 100%; height: 100%; opacity: 0.5; z-index: -1;">
+
+      </div>
+      <div class="valign-wrapper" style="top: 0px; position: absolute; width: 100%; height: 100%; z-index: 2;">
+        <div class="container" style="z-index: 3;">
+          <center style="z-index: 4;">
+            <h5 class="animated fadeInUp pacifico" style="z-index: 5;">
+              <b>
+                No soy tan bueno como tu con las manualidades, pero te hice esto porque me dijiste que también te tengo que decir
+                por qué te amo yo, pues aquí lo tienes, por esto y por mucho mas que nunca podre expresar con palabras, me encantas :D
+              </b>
+            </h5>
+          </center>
+        </div>
+      </div>
+    </div>
+
+    <a href="#1">
+      <div style="position: absolute; top: 90%; width: 100%; height: 10%; background-color: rgba(0, 0, 0, 0.4)">
+        <div class="waves-effect" style="height: 100%; width: 100%; z-index: 3;">
+          <div class="valign-wrapper" style="width: 100%; height: 100%;">
+            <div style="width: 100%;">
+              <center>
+                <p>
+                  Desliza hacia abajo para ver más
+                </p>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <div id="data" style="width: 100%; height: 100%; position: absolute; top: 100%;"></div>
+
+    <script src="auto.js" charset="utf-8"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+    var $root = $('html, body');
+    $('a').click(function() {
+        $root.animate({
+            scrollTop: $( $(this).attr('href') ).offset().top
+        }, 500);
+        return false;
+    });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.parallax').parallax();
+    });
+    </script>
+  </body>
+</html>
